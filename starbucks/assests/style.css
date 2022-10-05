@@ -1,0 +1,768 @@
+@import url('https://fons.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@font-face {
+    font-family: bonitinha;
+    src: url(Fonts/Amithen.ttf);
+ }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'bonitinha';
+
+}
+body{
+    background-color: #034e2f;
+}
+section{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+
+}
+/* CABEÇA */
+header
+{
+   color: #017143;
+    transition: 0.7s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100% ;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+
+   
+}
+ul{margin: 0;}
+
+header:hover {
+    transition: 1.4s;
+
+    background: #017143;
+}
+
+
+
+#contraste{
+    position: absolute;
+    right: 40px;
+    top: 35px;
+  max-width: 20px;
+  opacity: 0.7;
+  transition: 0.5s;
+  
+
+}
+#contraste:hover{
+    transition: 0.5s;
+    opacity: 1;
+    max-width: 21px;
+    filter: invert();
+    
+}
+.mobile-menu {
+    cursor: pointer;
+    position: absolute;
+    right: 70px;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #2db84b;
+    margin: 8px;
+    display: none;
+   
+    
+}
+header .logo{
+    position: relative;
+  max-width: 80px;
+   
+}
+
+header ul{
+    position: relative;
+    /* o display flex deixa automaticamente em row */
+    display: flex;
+
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    transition: 0.5s;
+    display: inline-block;
+    color: #2fb081;
+    font-weight: 100;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 30px;
+    
+}
+header ul li a:hover{
+   color: #fff;
+    transition: 0.5s;
+    transform: translateY(-3px);
+    text-shadow: 3px 4px 4px #092a1c;
+}
+/* conteudp */
+.content{
+    position: relative;
+    width: 100%;
+    display: flex ;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+ .textbox{
+    position: relative;
+    max-width: 600px;
+}
+ .textbox h2{
+    color:#333;
+    font-size: 4em;
+    /* distancia entre as linhas */
+    line-height: 1.4em;
+    font-weight: 500;
+   
+}
+ .textbox h2 span{
+    color:#017143;
+    font-size: 2em;
+    font-family: 'bonitinha';
+    font-weight: 300;
+}
+
+ .textbox p
+{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 900;
+    color:rgb(0, 0, 0);
+}
+.content .textbox a
+{
+    transition: 0.8s;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .textbox a:hover{
+    transition: 0.8s;
+    text-decoration: underline;
+}
+
+
+.content .imgbox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .imgbox img{
+    max-width: 350px;
+}
+
+.thumb
+{
+    position: absolute;
+    left:40% ;
+    bottom: 20px;
+    display: flex;
+    transform: translateX(-50%);
+    
+  
+    
+    
+    
+  
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 19px;
+    cursor: pointer;
+    transition: 0.7s;
+    filter: grayscale(0.6) ;
+    
+    
+   
+}
+.thumb li:hover{
+    transition: 0.6s;
+    transform: translateY(-15px);
+    filter: grayscale(0);
+    filter: brightness(1);
+    
+    
+    
+}
+
+.thumb li img{
+    max-width:60px;
+    filter: drop-shadow(10px 10px 10px rgb(11, 104, 42));
+    
+}
+#seta{
+    position: absolute;
+    top: -30px;
+    transform: rotate(18deg);
+    left: 240px;
+    filter: drop-shadow(2px 10px 2px rgb(12, 158, 61));
+    
+    max-width: 150px;
+   
+}
+#barra{
+    background-color:#028a61;
+    position: absolute;
+    top: 98%;
+   left: 33.4%;
+    width: 130px;
+    height: 5px;
+    border-radius: 10px;
+    
+ }
+ /* #coisa{
+overflow: auto;
+    width: 400px;
+    height: 70%;
+     position: absolute;
+     background: url(imagens/coisas.png);
+     top: 38%;
+     transform: scale(0.4);
+     left:  910px;
+     background-size: cover ;
+     background-repeat: no-repeat;
+     transform: rotate(9deg);
+ } */
+
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.sci li{
+    list-style:none;
+}
+.sci li a{
+    transition: 0.8s;
+   display: inline-block;
+   margin: 5px 0;
+   transform: scale(0.7);
+   /* vai inverter a cor pra branco pq a cor antes era preto */
+   filter: invert(1);
+
+}
+ /* #face{
+    position: absolute;
+    top: -42%;
+    right: 0%;
+    padding-left: 15px;
+    padding-right: 15px;
+}  */
+.sci li a{
+    padding: 3px;
+   border: 3px solid transparent;
+   padding: 5px;
+ 
+ }
+.sci li a:hover{
+
+ border: 3px solid black;
+ 
+ }
+
+.circle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    /* obviamente vai fazer um circulo */
+    clip-path:circle(600px at right 800px);
+    background-image: url(imagens/coisas.png);
+    background-size: 49%;
+}
+
+/* .opa:hover{
+    transform: translateY(-4px);
+    text-shadow: 3px 4px 4px #092a1c;
+    
+    
+} */
+
+.borda{
+  
+    border: 2px soldid black;
+}
+
+/* @keyframes backgroundtransiion {
+    0%{
+        background-position: 0% 80%;
+    }
+    50%{
+        background-position:80% 100% ;
+    }
+    100% {
+        background-position: 0% 90%;
+    }
+    
+} */
+.coisacont{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* depois do conteudo!!!!!!!! */
+
+
+/* darkmode */
+.line1.dark-mode{
+    background-color: #fff;
+}
+.line2.dark-mode{
+    background-color: #fff;
+}
+.line3.dark-mode{
+    background-color: #fff;
+}
+section.dark-mode{
+    background-color: #000000;
+}
+#contraste.dark-mode{
+    filter: invert();
+
+}
+h2.dark-mode{
+    color: #fff;
+}
+p.dark-mode{
+    color: white;
+}
+
+#barra.dark-mode{
+    background-color: rgb(255, 255, 255);
+}
+#seta.dark-mode{
+    filter: invert() brightness(2) ;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width:990px){
+    body {
+        
+        overflow-x: hidden;
+      }
+
+      header{
+          background-image: linear-gradient(-45deg, #017143, #0b241a);
+      }
+      header:hover {
+      
+    
+        background-image: linear-gradient(-45deg, #017143, #0b241a);
+    }
+      /* IMAGEM DO COPAO */
+      .content .imgbox{
+        position: absolute;
+        width: 400px;
+        display: flex;
+        justify-content: flex-end;
+       
+        
+        left: 60%;
+        top: -40%;
+    }
+    .content .imgbox img{
+        max-width: 290px;
+    }
+    /* CIRCULO! */
+    .circle
+{
+    position: absolute;
+
+    
+    
+    background: #017143;
+    /* obviamente vai fazer um circulo */
+    clip-path:circle(46% at right 90%);
+    background-image: url(imagens/coisas.png);
+      background-size: 49%;
+}
+/* REDES SOCIAIS */
+.sci li a{
+    transition: 0.8s;
+   display: inline-block;
+  
+   transform: scale(0.6);
+   /* vai inverter a cor pra branco pq a cor antes era preto */
+   
+
+}
+
+.sci{
+    overflow: hidden;
+   
+    top: 60%;
+    right: -10px;
+
+   
+   
+   
+}
+/* TEXTOS */
+.textbox h2{
+
+    font-size: 3em;
+    /* distancia entre as linhas */
+    
+    
+   
+}
+ .textbox h2 span{
+   
+    font-size: 1.2em;
+    
+}
+.textbox{
+    width: 400px;
+   
+    left: -10%;
+}
+
+/* COPINHOOS */
+.thumb
+{
+    
+    left:25% ;
+    bottom: 20px;
+    
+  
+    
+    
+    
+  
+}
+.thumb li img{
+    max-width: 45px;
+    
+}
+#barra{
+    
+  
+    top: 98%;
+   left: 31.8%;
+    width: 100px;
+    height: 5px;
+    border-radius: 10px;
+    
+ }
+ #seta{
+     max-width: 100px;
+     left: 220px;
+     
+ }
+ /* MENU */
+ .nav-list {
+     border-bottom-left-radius: 60% ;
+     border-bottom-right-radius: 10%;
+     color: #fff;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 30vw;
+    height: 92vh;
+    background: #074227;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+
+    z-index: 9999;
+  }
+  #link1{transition: 1s;
+      color: #fff;
+      font-family: 'Amatic SC', cursive;
+  }
+  #link2{transition: 1s;
+    color: #fff;
+    font-family: 'Amatic SC', cursive;
+}
+#link3{transition: 1s;
+    color: #fff;
+    font-family: 'Amatic SC', cursive;
+}
+#link4{transition: 1s;
+    color: #fff;
+    font-family: 'Amatic SC', cursive;
+}
+#link1:hover{font-size: 31px;
+    
+    text-shadow: 2px 2px 2px solid black;
+}
+#link2:hover{font-size: 31px;
+  
+text-shadow: 2px 2px 2px solid black;
+}
+#link3:hover{font-size: 31px;
+  
+text-shadow: 2px 2px 2px solid black;
+}
+#link4:hover{font-size: 31px;
+ 
+text-shadow: 2px 2px 2px solid black;
+}
+  .nav-list li {
+      margin-left: 0;
+      opacity: 1;
+      margin: 0;
+      color: #fff;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    font-weight: 900;
+      flex-direction: column;
+    }
+ .mobile-menu div{
+  display: block;
+ }
+    
+
+}
+.nav-list.active {
+    transform: translateX(0);
+  }
+
+/* samsung s8 */
+@media (max-width: 500px) {
+    body {
+      overflow-x: hidden;
+    }
+    .content .imgbox{
+        position: absolute;
+        width: 300px;
+        
+       
+        margin-top: 25px;
+        left: 45%;
+        top: 50%;
+    }
+    
+    .content .imgbox img{
+        max-width: 150px;
+    }
+    .sci li a{
+      
+       
+       
+       transform: scale(0.5);
+       /* vai inverter a cor pra branco pq a cor antes era preto */
+       
+    
+    }
+    .sci{
+        overflow: hidden;
+        position: absolute;
+        top: 60%;
+        right: 10px;
+        
+       
+    }
+    .textbox h2{
+      
+        /* distancia entre as linhas */
+        line-height: 1.4em;
+       
+       
+    }
+     .textbox h2 span{
+       
+        font-size: 1.2em;
+      
+    }
+    .textbox{
+        position: relative;
+        max-width: 60%;
+        left: -50%;
+    }
+    .circle
+{
+    position: absolute;
+    top: 1%;
+    left: 20%;
+  
+    
+    clip-path:circle(230px at right 550px);
+   
+    
+}
+
+}
+
+/* CONTEUDO PRINCIPAL */
+main{
+    padding: 0;
+    margin: 0;
+
+}
+
+#inicio-main{
+    margin-top: 15vh;
+    background-color: #1f8b60;
+    height: 30vh;
+    width: 100%;
+    box-shadow: 8px -11px 30px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+
+}
+#cardap{
+    position: absolute;
+    font-size: 15vh;
+    font-family: 'bonitinha';
+    font-weight: 100;
+    text-shadow: 2px 2px 22px black;
+    color: #fff;
+}
+#cardapio{
+    
+    
+    background-color: #fdfffe;
+    margin-bottom: 10px;
+    height: 118vh;
+    width: 100%;
+   
+}
+.card{
+    margin: 0;
+    padding: 0;
+    width: 16%;
+    height: 45vh;
+    border-radius: 10px;
+    margin: 45px;
+    box-shadow: 5px 2px 10px #017143;
+    transition: 0.7s;
+}
+#card1{
+    position: absolute;
+    right: 4%;
+}
+#card2{
+    position: absolute;
+    right: 27%;
+}
+#card3{
+    position: absolute;
+    right: 50%;
+}
+#card4{
+    position: absolute;
+    right: 73%;
+}
+#card5{
+    position: absolute;
+    bottom: -172%;
+    right: 50%;
+}
+#card6{
+    position: absolute;
+    bottom: -172%;
+    right: 4%;
+}
+#card7{
+    position: absolute;
+    bottom: -172%;
+    right: 27%;
+}
+#card8{
+    position: absolute;
+    bottom: -172%;
+    right: 73%;
+}
+.barra-informacoes{
+    margin: 0;
+    background-color: #017143;
+    width: 101%;
+    height: 33%;
+    left: -1px;
+    position: absolute;
+    top: 69%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.card:hover{
+    background-color: #1bc290;
+    width: 20%;
+    height: 51vh;
+    transform: translate(15px, 15px);
+    border-radius: 16px;
+}
+.info{
+ color: #fff;
+ font-size: 20px;
+ font-family: 'Amatic SC', cursive;
+}
+
+
+/* footer */
+footer{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #017143;
+    height: 100px;
+    width: 100%;
+    box-shadow:6px 2px 21px black;
+   
+}
+h3{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 800;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: underline 5px white;
+}
+
