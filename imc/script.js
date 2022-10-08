@@ -18,9 +18,9 @@ if(inome == "" || ipeso == ""||ialtura == ""){
     var imc = ( ipeso / alt).toFixed(1)
     if(imc < 18.5){
         result.textContent = `${inome} seu imc é ${imc} ${classifica}`;
-        result.textContent = `${inome} seu imc é ${imc} ${classifica}`;
+        
     }else if(imc > 18.5 && imc< 24.9){
-        var classifica = "você está no peso ideal SEU LIXO"
+        var classifica = "você está no peso ideal "
         result.textContent = `${inome} seu imc é ${imc} ${classifica}`;
     }else if(imc > 25 && imc < 29){
         classifica = "você está acima do peso"
