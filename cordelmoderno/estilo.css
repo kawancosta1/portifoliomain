@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, geneva, tahoma, sans-serif;
+    --fonte2:'Passion One', cursive;
+    --fonte3:'Sriracha', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte2);
+}
+
+header > h1{
+    padding-top: 50px;
+    /* pra dar um espacinho */
+   font-variant: small-caps;
+   /* no small-caps deixa o começo das palavras maiores, da um destaque pra primeira letra da palavra */
+   font-size:10vh;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 5vh;
+}
+
+section#img01{
+background-image: url(imagens/background001.jpg);
+background-position: right center;
+background-size: cover;
+}
+
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+
+
+}
+
+section > p {
+    padding-bottom: 2em;
+    /* espaçamento entre os paragrafos */
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(15, 15, 15);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    /* inset é a sombra interna igual do ps */
+    background-attachment: fixed;
+    /* esse background-attachment é o efeito parallax */
+
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.336);
+    display: inline-block;
+    /* inline block pq ele se adapta(emoji do joinha) */
+    padding: 10px;
+    text-shadow: 1px 1px 0px;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
