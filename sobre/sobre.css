@@ -26,6 +26,8 @@ body{
 }
 
 #links{
+    position: relative;
+    right: 30px;
 margin: 0;
 padding: 0;
     display: flex;
