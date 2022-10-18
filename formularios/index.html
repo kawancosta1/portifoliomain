@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+    <style>
+        *{
+            font-family: arial;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário </h1>
+
+    <!-- o auto complt ja fala por si só e o action é pra quando apertar no botao ele enviar pro php processar -->
+    <form action="cadastro.php" autocomplete="off">
+        <!--É NCESSARIO OK??? o label é pra relacionar oficilmente o input, como por exemplo o input nome, se eu clicar na label ele ja clica no formulario tlg????, o que é util tb pro cell -->
+        <p><label for="nome">nome:</label> 
+            <input type="text" name="nome" id="nome">
+        </p>
+        <p><label for="sobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="sobrenome">
+        </p>
+        <p>
+            <!-- o value é oq vai aparecer dentro do botao tlg? -->
+            <input type="submit" 
+            value="Enviar"></p>
+    </form>
+
+</body>
+</html>
