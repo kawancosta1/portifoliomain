@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste formulario</h1>
+    <!-- eu coloquei autocomplete on para que eu consiga determinar o autocomplete de cada caixa, por eexemplo, o navegador saberá que é o usuario pq eu determinei isso, então fica mais facil pro navegador -->
+  <form action="cadastro.php" method="post" autocomplete="on">
+<p>
+    <label for="iusu">nome</label>
+    <!-- esse required faz com q vc prcise preencher o input usuario seja necessario para nviar os dados -->
+    <input type="text" name="usu" id="iusu" required minlength="10" size="10" placeholder="nome do usuario"  autocomplete="username"> <!-- o min lenght é o tamanho minimo do usuario e o size é o tamanho da caixa d acodo cm numero de caracteres que vc determina para caber nela no caso, 10 caracteres e o placeholder é aquela dica que fica na box,antes de vc clicar-->
+</p>
+<p>
+    <label for="isenha">senha</label>
+    <input type="password" name="senha" id="isenha" required minlength="8" placeholder="senha do usuario" size="8" autocomplete="current-password">
+</p>
+<input type="submit" value="enviar">
+<input type="reset" value="limpar">
+
+  </form>
+    
+</body>
+</html>
