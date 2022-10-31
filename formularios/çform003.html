@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste forms</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+<p>
+    <label for="nome">nome</label>
+    <input type="text" name="nome" id="nome" autocomplete="name">
+    
+</p>
+<p>
+    <!-- o min e max é pra numero e o minlenght e o max lenght é para caracteres -->
+    <label for="media">media</label>
+    <input type="number" name="media" id="media" min="0" max="10" placeholder="de 0 a de" step="0.5">
+    <!-- o ste é quais decimais sao permitidos -->
+</p>
+<p><label for="ms">periodo letivo</label>
+<input type="month" name="ms" id="ims" value="2020-07">
+</p>
+<p>
+    <!-- o date é pro dia mes e ano e o month é só pro mes -->
+    <label for="dia">dia da prova</label>
+<input type="date" name="dia" id="dia" value="2020-07-14"></p>
+<p><label for="hora">hora da prova</label>
+<input type="time" name="hora" id="hora"></p>
+<p>
+    <input type="submit" value="enviar">
+    <input type="reset" value="limpar">
+</p>
+
+    </form>
+</body>
+</html>
