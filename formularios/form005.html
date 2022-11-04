@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        fieldset{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        }
+    </style>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sxmax" id="isxmax" value="m"><label for="isxmax">masculino</label>
+            <input type="radio" name="sxfem" id="isxfem" value="f"><label for="isexfem" >feminino</label>
+        </fieldset>
+        <fieldset>
+            <!-- o checked ele deixa marcado -->
+            <legend>esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesbasq" checked> <label for="iesbasq">basquete</label>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">futebol</label>
+            <input type="checkbox" name="esfut" id="iestenis"><label for="iestenis">tenis</label>
+            <input type="checkbox" name="esfut" id="iesnata"><label for="iesnata">nataçã</label></br>
+            <br><input type="checkbox" name="esfut" id="iesbamb"><label for="iesbamb">bambole</label></br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
