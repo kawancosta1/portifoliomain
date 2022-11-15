@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="Iest">estado</label>
+            <select name="est" id="iest">
+                <option value="" selected>---eescolha---</option>
+                <optgroup label="regiao sudeste">
+                    <option value="sp" selected>são paulo</option>
+                    <option value="rj">rio de janeiro</option>
+                    <option value="mg">mato grosso</option>
+                </optgroup>
+
+                <optgroup label="regiao nordeste">
+                    <option value="MA">maranhão</option>
+                    <option value="PE">pernambuco</option>
+                    <option value="rn">rio grande do norte</option>
+                </optgroup>
+                
+            </select>
+        </p>
+        <p>
+            <label for="iprof">profissao</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+
+            <!-- o datalist é tipo um select no datalist(inputtext basicamente), explicando por baixo, eu cho -->
+
+            <datalist id="listprof">
+                <option value="ADM">administrador</option>
+                <option value="CONT">
+                    contabilidade
+                </option>
+                <option value="dev">desenvolvedor</option>
+                <option value="PROF">
+                    professor
+                </option>
+            </datalist>
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
+    </form>
+    
+</body>
+</html>
