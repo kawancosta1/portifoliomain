@@ -1,0 +1,13 @@
+h1{
+    transition: 0.5s;
+   transform: translateX(-70px);
+
+}
+.ola{
+    transition: 0.5s;
+    background-color:aqua ;
+    font-size: x-large;
+ transform: translateX(110px);
+    color: black;
+    
+} 

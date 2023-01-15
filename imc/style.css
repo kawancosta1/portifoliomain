@@ -1,17 +1,79 @@
-p{
-    color: white;
-    font-size: 20px;
-    font-weight: bolder;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 50px;
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-image: linear-gradient(to top,
+rgb(0, 0, 0),
+rgb(95, 14, 95));
+}
+.card {
+  transition: 0.5s;
+  border-radius: 6%;
+
+  left: 500px;
+  background-color: #000;
+  height: 600px;
+  width: 400px;
+  box-shadow: 3px 5px 10px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+button {
+ 
+  margin-bottom: 80px;
+  border: 2px solid rgba(0, 0, 0, 0.336);
+  font-family: "Fascinate", cursive;
+  color: rgba(0, 0, 0, 0.589);
+  font-size: 20px;
+  transition: 0.5s;
+}
+button:hover {
+  box-shadow: 1px 1px 25px rgb(71, 5, 109);
+  transition: 0.5s;
+  border: 2px solid #000;
+  color: #000;
+}
+#nome{
+  padding-bottom:10px ;
+}
+p {
+  
+  transition: 0.5s;
+  letter-spacing: 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "Fascinate", cursive;
+  text-shadow: 3px 4px 5px rgb(82, 17, 134);
+  padding: 50px;
 }
 
-.card{
-position: relative;
-bottom: -50px;
-left: 500px;
-    background-color: rgb(126, 30, 145);
-    height: 500px;
-    width: 400px;
-    box-shadow: 3px 5px 10px black;
+input {
+  box-shadow: 2px 2px 2px black;
+}
+
+.result{
+
+  width: 400px;
+  padding: 25px;
+  height: 90px;
+font-size: 26px;
+  transform: translateX(700px);
+  margin-left: 20px;
+  transition: 0.5s;
+  background-color: #000;
+  border-radius: 15px;
+  color: #ffff;
+  text-shadow: 3px 4px 5px rgb(82, 17, 134);
+  font-family: "Fascinate", cursive;
+}
+.reAparece {
+  transform: translateX(-1px);
+  transition: 0.5s;
+  background-color: #000;
+ 
 }

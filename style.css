@@ -1,27 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nova+Mono&display=swap');
 
-font-face {
-    font-family: ;
-    src: url([caminho]);
- }
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
+body{
+    background-color: #000;
+}
+
+/* PARTE NAVBAR */
+
 nav{
-font-size: 20px;
+    
+   box-shadow: 1px 1px 10px  rgb(138, 43, 226);
     display: flex;
     justify-content: center;
     align-items: center;
-   padding: 10px;
-    
-}
-li{
-    list-style-type: none;
+   
+    height: 80px;
+    width: 100%;
+   
 }
 ul{
-    
-    padding-left: 90px;
+    list-style-type: none;
 }
+/* Fonte e cor */
+nav{
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+    color:rgb(255, 255, 255) ;
+    background-color: black;
+}
+
+nav > ul{
+    
+    padding: 60px;
+}
+.link-nav{
+    text-decoration: none;
+    color: #ffff;
+    transition: 0.5s;
+    text-shadow: 2px 2px 2px rgb(138, 43, 226);
+}
+
+.link-nav:hover{
+transition: 0.5s;
+color: rgb(138, 43, 226);
+text-shadow: 1px 1px 1px white;
+text-decoration: underline rgb(138, 43, 226);;
+}
+
+#home{
+text-shadow: 1px 1px 1px #ffff ;
+    color: rgb(138, 43, 226);
+    text-decoration: underline  rgb(138, 43, 226);;
+}
+
+
+
+/* fFECHANDO NAVBAR */
+
+/* CARDS */
+.cards{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+  
+}
+.div-card{
+    
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 50vhpx;
+    flex-wrap: wrap;
+}
+
+.p-style{
+    font-family: 'Lobster', cursive;
+
+    font-family: 'Nova Mono', monospace;
+    text-shadow: 2px 1px 3px rgb(138, 43, 226);
+    font-size: 25px;
+    color: #ffff;
+}
+
+ img{
+  
+    border: solid 2px rgb(82, 15, 121);
+height: 460px;
+width: 400px
+}
+ul{
+    margin: 0;
+    padding: 0%;
+}
+p{
+    margin: 0;
+    padding: 0%;
+   height: auto;
+ 
+}
+.lista{
+    margin: 0%;
+    padding: 0%;
+    width: 400px;
+}
+
+/* CARDS PROJETOS */
+
+.card-projeto{
+    
+}
+
+
+
 
