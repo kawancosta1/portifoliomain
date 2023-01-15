@@ -139,6 +139,58 @@ p{
 #imgP{
     
 }
+.Naparece{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    transform: translateX(-1000px);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+    background-image: linear-gradient(to right, black ,rgb(91, 7, 148),rgb(55, 5, 88),rgb(33, 2, 53),black);
+   border-radius: 20px;
+   animation: fadeend 0.5s ease-out  ;
+   
+}
+.aparece{
+    background-image: linear-gradient(to right, black ,rgb(91, 7, 148),rgb(55, 5, 88),rgb(33, 2, 53),black);
+    transform: translateX(220px);
+    animation: fade 0.5s ease-out  ;
+}
+
+@keyframes fade {
+    0%{
+        filter: opacity(0);
+    }
+    25%{
+        filter: opacity(0.1);
+    }
+    75%{
+        filter: opacity(0.2);
+    }
+    100%{
+        filter: opacity(1);
+    }
+    
+}
+@keyframes fadeend {
+    0%{
+        filter: opacity(0.2);
+    }
+    25%{
+        filter: opacity(0.1);
+    }
+    75%{
+        filter: opacity(0);
+    }
+    100%{
+        filter: opacity(0);
+    }
+    
+    
+}
 
 
 
