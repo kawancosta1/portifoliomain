@@ -2,12 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nova+Mono&display=swap');
 
 *{
+   
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
 body{
+    margin: 0%;
     background-color: #000;
 }
 
@@ -88,11 +90,15 @@ text-shadow: 1px 1px 1px #ffff ;
     color: #ffff;
 }
 
- img{
+#eu{
   
     border: solid 2px rgb(82, 15, 121);
 height: 460px;
 width: 400px
+}
+#img{
+    height: 100px;
+    width: 100px;
 }
 ul{
     margin: 0;
@@ -111,10 +117,29 @@ p{
 }
 
 /* CARDS PROJETOS */
-
 .card-projeto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: auto;
+    width: auto;
+}
+.ul-divP{
+    margin: 0%;
+
+}
+#imgP{
+    margin: 0%;
+    height: 500px;
+    margin-left: -73%;
+   
     
 }
+#imgP{
+    
+}
+
 
 
 

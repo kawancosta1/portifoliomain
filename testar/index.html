@@ -8,13 +8,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="myDIV" >ola</h1>
+    <h1 id="myDIV" onmouseenter="passar()">ola</h1>
     <button onclick="vamos()">pronto</button>
     <script>
 
 function vamos(){
     var Div = document.querySelector('#myDIV')
    Div.classList.toggle('ola')
+}
+
+function passar(){
+    console.log('oi')
 }
     </script>
 </body>
