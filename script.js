@@ -39,3 +39,13 @@ function retirarCordel(){
     let imagem3 = document.querySelector('.NapareceCordel')
     imagem3.classList.toggle('apareceCordel')
 }
+
+//android
+function passarAndroid(){
+    let imagem4 = document.querySelector('.NapareceAndroid')
+    imagem4.classList.toggle('apareceAndroid')
+}
+function retirarAndroid(){
+    let imagem4 = document.querySelector('.NapareceAndroid')
+    imagem4.classList.toggle('apareceAndroid')
+}

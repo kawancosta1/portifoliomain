@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de responsividade</title>
+    <style>
+
+        body{background-color: grey;
+        }
+
+        main{background-color: white;
+        padding: 25px;
+    border-radius: 10px;
+
+
+min-width: 320px;
+max-width: 800px;
+margin: auto;
+
+}
+/* pra imagem ocupar 100% idependente do tamanho da tela */
+/* img{
+    width: 100%;
+} */
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>testando</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum necessitatibus, aperiam facilis quam adipisci quisquam. Nisi expedita magnam perferendis illum. Voluptatibus obcaecati dolore exercitationem, quidem vitae magni cumque sapiente tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellat, animi ad placeat cum temporibus cupiditate fugiat fuga pariatur veritatis voluptatibus, perspiciatis quae nemo adipisci necessitatibus iusto ab, debitis omnis.
+        </p>
+        <!-- no source, vai ser no caso de quando a resolução ficar abaixo de 800, ele define outra imagem -->
+        <picture>
+            <source media="(max-width:800px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt=""></picture>
+    </main>
+</body>
+</html>
