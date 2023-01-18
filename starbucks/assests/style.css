@@ -766,7 +766,7 @@ h3{
     text-decoration: underline 5px white;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 422px) {
     body {
       overflow-x: hidden;
     }
