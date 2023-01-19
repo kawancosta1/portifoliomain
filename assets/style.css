@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nova+Mono&display=swap');
+
+*{
+   
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    margin: 0%;
+    background-color: rgb(0, 0, 0);
+}
+
+/* PARTE NAVBAR */
+
+nav{
+    
+   box-shadow: 1px 1px 10px  rgb(138, 43, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    height: 80px;
+    width: 100%;
+   
+}
+ul{
+    list-style-type: none;
+}
+/* Fonte e cor */
+nav{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+    color:rgb(255, 255, 255) ;
+    background-color: rgba(0, 0, 0, 0.151);
+    
+}
+
+nav > ul{
+    position: relative;
+   
+    padding: 60px;
+   
+}
+.link-nav{
+    text-decoration: none;
+    color: #ffff;
+    transition: 0.5s;
+    text-shadow: 2px 2px 2px rgb(138, 43, 226);
+}
+
+.link-nav:hover{
+transition: 0.5s;
+color: rgb(138, 43, 226);
+text-shadow: 1px 1px 1px white;
+text-decoration: underline rgb(138, 43, 226);;
+}
+
+#home{
+text-shadow: 1px 1px 1px #ffff ;
+    color: rgb(138, 43, 226);
+    text-decoration: underline  rgb(138, 43, 226);;
+}
+
+
+
+/* fFECHANDO NAVBAR */
+
+/* CARDS */
+.cards{
+    width: auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.div-card{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 120%;
+   
+   
+}
+
+.p-style{
+    font-family: 'Lobster', cursive;
+
+    font-family: 'Nova Mono', monospace;
+    text-shadow: 2px 1px 3px rgb(138, 43, 226);
+    font-size: 25px;
+    color: #ffff;
+}
+#sobre{
+    position: relative;
+    right: 150px;
+    padding-top: 40px;
+    font-size: 25px;
+    width: 700px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+#sobreS{
+    font-family: 'Lobster', cursive;
+    color: rgb(128, 1, 247);
+text-shadow: 2px 1px 2px white;
+font-size: 35px;
+
+}
+
+#eu{
+  position: relative;
+  right: 60px;
+  margin-left: 12.5%;
+    border: solid 2px rgb(82, 15, 121);
+height: 430px;
+width: 400px
+}
+#img{
+    height: 100px;
+    width: 100px;
+}
+ul{
+    margin: 0;
+    padding: 0%;
+}
+p{
+    margin: 0;
+    padding: 0%;
+   height: auto;
+ 
+}
+.lista{
+    margin: 0%;
+    padding: 0%;
+    width: 400px;
+}
+
+/* CARDS PROJETOS */
+.card-projeto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: auto;
+    width: auto;
+}
+.ul-divP{
+    margin: 0%;
+
+}
+.imgP{
+    margin: 0%;
+    height: 500px;
+    margin-left: -73%;
+   transition: 0.5s;
+margin-top: 70px;
+filter:brightness(0.2) ;
+ 
+   
+    
+}
+#imgImc:hover{
+    transition: 0.5s;
+    box-shadow: 2px 2px 15px rgb(193, 129, 230);
+    filter:brightness(1) ;
+}
+
+.imgStar:hover{
+    transition: 0.5s;
+    box-shadow: 2px 2px 25px #02733E;
+    filter:brightness(1) ;
+
+}
+
+.imgCordel:hover{
+    transition: 0.5s;
+    box-shadow: 2px 2px 25px #3c1cca;
+    filter:brightness(1) ;
+}
+.imgAndroid:hover{
+    transition: 0.5s;
+    box-shadow: 2px 2px 15px #cfc20d;
+    filter:brightness(1) ;
+}
+
+/* LISTAS ADD */
+
+
+.p-li{
+    margin-bottom: 0px;
+    
+    position: relative;
+    top: 20px;
+    right: -300px;
+    margin: 0px;
+    padding: 0%;
+    text-align: center;
+    width: 750px;
+    color: #fff;
+    font-family: monospace;
+    letter-spacing: 7px;
+    font-size: 25px;
+}
+.p-star{
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 2px #00aa33;
+    position: relative;
+    top: 20px;
+    right: -300px;
+    margin: 0px;
+    padding: 0%;
+    text-align: center;
+    width: 750px;
+    color: #fff;
+    font-family: monospace;
+    letter-spacing: 7px;
+    font-size: 25px;
+}
+.p-cordel{
+    margin-bottom: 0px;
+    text-shadow: 3px 3px 2px #2415a3;
+    position: relative;
+    top: 20px;
+    right: -300px;
+    margin: 0px;
+    padding: 0%;
+    text-align: center;
+    width: 750px;
+    color: #fff;
+    font-family: monospace;
+    letter-spacing: 7px;
+    font-size: 25px;
+}
+.p-android{
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 2px #ecc410;
+    position: relative;
+    top: 20px;
+    right: -300px;
+    margin: 0px;
+    padding: 0%;
+    text-align: center;
+    width: 750px;
+    color: #fff;
+    font-family: monospace;
+    letter-spacing: 7px;
+    font-size: 25px;
+
+}
+ .sobreAndroid{
+    font-family: 'Lobster', cursive;
+    color: rgb(255, 255, 255);
+text-shadow: 2px 1px 1px rgb(230, 216, 23);
+font-size: 33px;
+} 
+.sobreLi{ font-family: 'Lobster', cursive;
+    color: rgb(128, 1, 247);
+text-shadow: 2px 1px 1px white;
+font-size: 33px;
+
+}
+.sobreStar{
+    font-family: 'Lobster', cursive;
+    color: rgb(255, 255, 255);
+text-shadow: 3px 3px 2px rgb(0, 121, 50);
+font-size: 33px;
+}
+.sobreCordel{
+    font-family: 'Lobster', cursive;
+    color: rgb(255, 255, 255);
+text-shadow: 3px 3px 3px rgb(29, 26, 168);
+font-size: 33px;
+}
+/* displayzinho que surge */
+.Naparece{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    transform: translateX(-1000px);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+    background-image: linear-gradient(to right, black ,rgb(91, 7, 148),rgb(55, 5, 88),rgb(33, 2, 53),black);
+   border-radius: 20px;
+   animation: fadeend 0.5s ease-out  ;
+   margin-top:-40px ;
+   
+}
+.aparece{
+    background-image: linear-gradient(to right, black ,rgb(91, 7, 148),rgb(55, 5, 88),rgb(33, 2, 53),black);
+    transform: translateX(220px);
+    animation: fade 0.5s ease-out  ;
+}
+.NapareceStar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    transform: translateX(-1000px);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+    background-image: linear-gradient(to right, black ,rgb(91, 7, 148),rgb(55, 5, 88),rgb(33, 2, 53),black);
+   border-radius: 20px;
+   animation: fadeend 0.5s ease-out  ;
+   margin-top:-40px ;
+}
+.apareceStar{
+    background-image: linear-gradient(to right,#02733E,#035931);
+    transform: translateX(-250px);
+    animation: fade 0.5s ease-out  ;
+}
+.NapareceCordel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    transform: translateX(-1000px);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+    background-image: linear-gradient(to right, black ,rgb(91, 7, 148),rgb(55, 5, 88),rgb(33, 2, 53),black);
+   border-radius: 20px;
+   animation: fadeend 0.5s ease-out  ;
+   margin-top:-40px ;
+}
+.apareceCordel{
+    background-image: linear-gradient(to right,#000000,#140849,#220d81,#17045c);
+    transform: translateX(250px);
+    animation: fade 0.5s ease-out  ;
+}
+.NapareceAndroid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    transform: translateX(-1000px);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+   background-color: #000;
+   border-radius: 20px;
+   animation: fadeend 0.5s ease-out  ;
+   margin-top:-40px ;
+}
+.apareceAndroid{
+   background-color: #000;
+    transform: translateX(350px);
+    animation: fade 0.5s ease-out  ;
+}
+
+
+@keyframes fade {
+    0%{
+        filter: opacity(0);
+    }
+    25%{
+        filter: opacity(0.1);
+    }
+    75%{
+        filter: opacity(0.2);
+    }
+    100%{
+        filter: opacity(1);
+    }
+    
+}
+@keyframes fadeend {
+    0%{
+        filter: opacity(0.2);
+    }
+    25%{
+        filter: opacity(0.1);
+    }
+    75%{
+        filter: opacity(0);
+    }
+    100%{
+        filter: opacity(0);
+    }
+    
+    
+}
+
+/* LINKS CERTIFICADOS */
+.linkCerti{
+    text-decoration: underline #ffff;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(35, 7, 61);
+    margin-top: 70px;
+  }
+  
+.p-foo{
+    color: #ffff;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-shadow: 2px 2px 3px#000;
+}
+
+
+@media (max-width:430px) {
+    nav{
+        height: 80px;
+            width: 100%;
+           
+        }
+        ul{
+            list-style-type: none;
+        }
+        /* Fonte e cor */
+        nav{
+            display: flex;
+            justify-content: center;
+            font-family: 'Lobster', cursive;
+            font-size: 22px;
+            color:rgb(255, 255, 255) ;
+            background-color: rgba(0, 0, 0, 0.151);
+            
+        }
+        
+        nav > ul{
+            position: relative;
+           
+            padding: 30px;
+           
+        }
+        .cards{
+            width: auto;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        .div-card{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 120%;
+           
+           
+        }
+        
+        .p-style{
+            font-family: 'Lobster', cursive;
+        
+            font-family: 'Nova Mono', monospace;
+            text-shadow: 2px 1px 3px rgb(138, 43, 226);
+            font-size: 15px;
+            color: #ffff;
+        }
+        #sobre{
+            position: relative;
+            right: 40px;
+            padding-top: 40px;
+            font-size: 15px;
+            width: 300px;
+            letter-spacing: 6px;
+            text-align: center;
+        }
+        #sobreS{
+            font-family: 'Lobster', cursive;
+            color: rgb(128, 1, 247);
+        text-shadow: 2px 1px 2px white;
+        font-size: 35px;
+        
+        }
+        
+        #eu{
+          position: relative;
+          right: 70px;
+          margin-left: 12.5%;
+            border: solid 2px rgb(82, 15, 121);
+        height: 330px;
+        width: 300px
+        }
+        #img{
+            height: 100px;
+            width: 100px;
+        }
+        ul{
+            margin: 0;
+            padding: 0%;
+        }
+        p{
+            margin: 0;
+            padding: 0%;
+           height: auto;
+         
+        }
+        .lista{
+            margin: 0%;
+            padding: 0%;
+            width: 200px;
+        }
+        .imgP{
+            margin: 0%;
+            height: 200px;
+            margin-left: -49%;
+           transition: 0.5s;
+        margin-top: 70px;
+        filter:brightness(0.2) ;
+         
+           
+            
+        }
+        #imgImc:hover{
+            transition: 0.5s;
+            box-shadow: 2px 2px 15px rgb(193, 129, 230);
+            filter:brightness(1) ;
+        }
+        
+        .imgStar:hover{
+            transition: 0.5s;
+            box-shadow: 2px 2px 25px #02733E;
+            filter:brightness(1) ;
+        
+        }
+        
+        .imgCordel:hover{
+            transition: 0.5s;
+            box-shadow: 2px 2px 25px #3c1cca;
+            filter:brightness(1) ;
+        }
+        .imgAndroid:hover{
+            transition: 0.5s;
+            box-shadow: 2px 2px 15px #cfc20d;
+            filter:brightness(1) ;
+        }
+        
+        /* LISTAS ADD */
+        
+        
+        .p-li{
+            margin-bottom: 0px;
+            
+            position: relative;
+            top: 20px;
+            right: -35px;
+            margin: 0px;
+            padding: 0%;
+            text-align: center;
+            width: 350px;
+            color: #fff;
+            font-family: monospace;
+            letter-spacing: 7px;
+            font-size: 15px;
+        }
+        .p-star{
+            margin-bottom: 0px;
+            text-shadow: 2px 2px 2px #00aa33;
+            position: relative;
+            top: 20px;
+            right: -35px;
+            margin: 0px;
+            padding: 0%;
+            text-align: center;
+            width: 350px;
+            color: #fff;
+            font-family: monospace;
+            letter-spacing: 5px;
+            font-size: 15px;
+        }
+        .p-cordel{
+            margin-bottom: 0px;
+            text-shadow: 3px 3px 2px #2415a3;
+            position: relative;
+            top: 20px;
+            right: -35px;
+            margin: 0px;
+            padding: 0%;
+            text-align: center;
+            width: 350px;
+            color: #fff;
+            font-family: monospace;
+            letter-spacing: 7px;
+            font-size: 15px;
+        }
+        .p-android{
+            margin-bottom: 0px;
+            text-shadow: 1px 1px 2px #ecc410;
+            position: relative;
+            top: 20px;
+            right: -35px;
+            margin: 0px;
+            padding: 0%;
+            text-align: center;
+            width: 350px;
+            color: #fff;
+            font-family: monospace;
+            letter-spacing: 7px;
+            font-size: 15px;
+        
+        }
+         .sobreAndroid{
+            font-family: 'Lobster', cursive;
+            color: rgb(255, 255, 255);
+        text-shadow: 2px 1px 1px rgb(230, 216, 23);
+        font-size: 23px;
+        } 
+        .sobreLi{ font-family: 'Lobster', cursive;
+            color: rgb(128, 1, 247);
+        text-shadow: 2px 1px 1px white;
+        font-size: 23px;
+        
+        }
+        .sobreStar{
+            font-family: 'Lobster', cursive;
+            color: rgb(255, 255, 255);
+        text-shadow: 3px 3px 2px rgb(0, 121, 50);
+        font-size: 23px;
+        }
+        .sobreCordel{
+            font-family: 'Lobster', cursive;
+            color: rgb(255, 255, 255);
+        text-shadow: 3px 3px 3px rgb(29, 26, 168);
+        font-size: 23px;
+        }
+
+        .Naparece{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s;
+            transform: translateX(-1000px);
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 30px;
+            z-index: 1;
+            background-image: linear-gradient(to right, black ,rgb(91, 7, 148),rgb(55, 5, 88),rgb(33, 2, 53),black);
+           border-radius: 20px;
+           animation: fadeend 0.5s ease-out  ;
+           margin-top:-40px ;
+           
+        }
+        .aparece{
+            background-image: linear-gradient(to right, black ,rgb(91, 7, 148),rgb(55, 5, 88),rgb(33, 2, 53),black);
+            transform: translateX(85px);
+            animation: fade 0.5s ease-out  ;
+        }
+        .NapareceStar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s;
+            transform: translateX(-1000px);
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 30px;
+            z-index: 1;
+            background-image: linear-gradient(to right, black ,rgb(91, 7, 148),rgb(55, 5, 88),rgb(33, 2, 53),black);
+           border-radius: 20px;
+           animation: fadeend 0.5s ease-out  ;
+           margin-top:-40px ;
+        }
+        .apareceStar{
+            background-image: linear-gradient(to right,#02733E,#035931);
+            transform: translateX(85px);
+            animation: fade 0.5s ease-out  ;
+        }
+        .NapareceCordel{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s;
+            transform: translateX(-1000px);
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 30px;
+            z-index: 1;
+            background-image: linear-gradient(to right, black ,rgb(91, 7, 148),rgb(55, 5, 88),rgb(33, 2, 53),black);
+           border-radius: 20px;
+           animation: fadeend 0.5s ease-out  ;
+           margin-top:-40px ;
+        }
+        .apareceCordel{
+            background-image: linear-gradient(to right,#000000,#140849,#220d81,#17045c);
+            transform: translateX(85px);
+            animation: fade 0.5s ease-out  ;
+        }
+        .NapareceAndroid{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s;
+            transform: translateX(-1000px);
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 30px;
+            z-index: 1;
+           background-color: #000;
+           border-radius: 20px;
+           animation: fadeend 0.5s ease-out  ;
+           margin-top:-40px ;
+        }
+        .apareceAndroid{
+           background-color: #000;
+           transform: translateX(105px);
+            animation: fade 0.5s ease-out  ;
+        }
+
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            background-color: rgb(35, 7, 61);
+            margin-top: 70px;
+          }
+          
+        .p-foo{
+            padding-left: 60px;
+            margin: 10px;
+            color: #ffff;
+            font-size: 10px;
+            width: 350px;
+            font-family: monospace;
+            font-weight: bold;
+            letter-spacing: 8px;
+            text-shadow: 2px 2px 3px#000;
+        }
+        
+        
+}
+
+
+
+
+
