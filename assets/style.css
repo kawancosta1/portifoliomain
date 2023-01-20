@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nova+Mono&display=swap');
-
+/*@follow-up  */
 *{
    
     margin: 0;
@@ -65,6 +66,8 @@ text-shadow: 1px 1px 1px #ffff ;
     color: rgb(138, 43, 226);
     text-decoration: underline  rgb(138, 43, 226);;
 }
+
+/* BARRA */
 
 
 
@@ -367,6 +370,11 @@ font-size: 33px;
 }
 
 
+
+
+
+
+
 @keyframes fade {
     0%{
         filter: opacity(0);
@@ -399,10 +407,82 @@ font-size: 33px;
     
 }
 
-/* LINKS CERTIFICADOS */
+/* LINKS  */
 .linkCerti{
     text-decoration: underline #ffff;
 }
+
+aside{
+   
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.imgLink{
+   opacity: 0;
+    position: absolute;
+    left: 170px;
+    top: 4475px;
+    height:50px;
+    transition: 0.5s;
+    
+    
+}
+.p-Link:hover  .imglink{
+    background-color: #00aa33;
+}
+.imgLink2{
+    position: absolute;
+    opacity: 0;
+    top: 4575px;
+    height:50px;
+
+}
+#Lgit{
+     transition: 0.5s;
+    letter-spacing: 10px;
+    margin-left: 250px;
+    text-shadow: 5px 5px 4px rgb(61, 10, 109);
+    font-size: 40px;
+    color: #ffff;
+    font-family: 'Rock Salt', cursive;
+    text-decoration: underline solid 1px transparent;
+}
+#Lgit:hover .imgLink{
+    transition: 0.5s;
+    opacity: 1;
+}
+#Lgit:hover{
+    transition: 0.5s;
+    text-decoration: underline solid 2px #fff;
+}
+
+
+.p-Link{
+    letter-spacing: 10px;
+    margin-left: 250px;
+    text-shadow: 5px 5px 4px rgb(61, 10, 109);
+    font-size: 40px;
+    color: #ffff;
+    font-family: 'Rock Salt', cursive;
+}
+.h1-link{
+    
+    margin-left: 610px;
+     padding: 0px;
+    text-shadow: 5px 6px 6px rgb(61, 10, 109);
+    font-size: 70px;
+    color: #ffff;
+    font-family: 'Lobster', cursive;
+    text-decoration: underline 5px Blueviolet;
+    
+}
+
+
+/* @follow-up */
 
 /* footer */
 
@@ -414,6 +494,7 @@ footer{
     height: 100px;
     background-color: rgb(35, 7, 61);
     margin-top: 70px;
+    
   }
   
 .p-foo{

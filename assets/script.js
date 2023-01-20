@@ -49,3 +49,5 @@ function retirarAndroid(){
     let imagem4 = document.querySelector('.NapareceAndroid')
     imagem4.classList.toggle('apareceAndroid')
 }
+
+//Nav
