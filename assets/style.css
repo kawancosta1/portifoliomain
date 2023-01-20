@@ -167,6 +167,10 @@ filter:brightness(0.2) ;
    
     
 }
+
+.imgAndroid{
+    margin-left: -325px;
+}
 #imgImc:hover{
     transition: 0.5s;
     box-shadow: 2px 2px 15px rgb(193, 129, 230);
