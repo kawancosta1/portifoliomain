@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+:root{
+    
+}
+
 body{
     margin: 0%;
     background-color: rgb(0, 0, 0);
@@ -406,6 +410,9 @@ font-size: 33px;
     
     
 }
+.espaco{
+    margin-bottom: 0px;
+}
 
 /* LINKS  */
 .linkCerti{
@@ -413,9 +420,12 @@ font-size: 33px;
 }
 
 aside{
-   
+    
+
+   margin-bottom: 220px;
     justify-content: center;
     align-items: center;
+    margin-left: 380px;
 }
 
 
@@ -425,23 +435,23 @@ aside{
    opacity: 0;
     position: absolute;
     left: 170px;
-    top: 4475px;
+    top: 25px;
     height:50px;
     transition: 0.5s;
     
     
 }
-.p-Link:hover  .imglink{
-    background-color: #00aa33;
-}
+
 .imgLink2{
     position: absolute;
     opacity: 0;
-    top: 4575px;
+    left: 170px;
+    top: 115px;
     height:50px;
 
 }
 #Lgit{
+    
      transition: 0.5s;
     letter-spacing: 10px;
     margin-left: 250px;
@@ -459,7 +469,26 @@ aside{
     transition: 0.5s;
     text-decoration: underline solid 2px #fff;
 }
+#Llinke{
+   
+    letter-spacing: 10px;
+    margin-left: 250px;
+    text-shadow: 5px 5px 4px rgb(61, 10, 109);
+    font-size: 35px;
+    color: #ffff;
+    font-family: 'Rock Salt', cursive;
+    text-decoration: underline solid 0px transparent;
+}
 
+#Llinke:hover .imgLink2{
+opacity: 1;
+transition: 0.5s;
+
+}
+#Llinke:hover{
+    transition: 0.5s;
+    text-decoration: underline solid 2px #fff;
+}
 
 .p-Link{
     letter-spacing: 10px;
@@ -479,6 +508,15 @@ aside{
     font-family: 'Lobster', cursive;
     text-decoration: underline 5px Blueviolet;
     
+}
+.linkOff{
+    width: 800px;
+    position: relative;
+    right: 100px;
+    border: 6px solid rgb(255, 254, 254);
+    margin: 0px;
+padding-right: 50px;
+box-shadow: 2px 2px 2px;
 }
 
 
@@ -809,6 +847,101 @@ footer{
            transform: translateX(105px);
             animation: fade 0.5s ease-out  ;
         }
+        /* LINKS  */
+.linkCerti{
+    text-decoration: underline #ffff;
+}
+
+aside{
+   position: absolute;
+    justify-content: center;
+    align-items: center;
+   right: 80px;
+  
+   top: 3130px;
+}
+
+
+
+
+.imgLink{
+   opacity: 0;
+    position: absolute;
+    left:220px;
+    top: 4px;
+    height:20px;
+    transition: 0.5s;
+    
+    
+}
+
+.imgLink2{
+    position: absolute;
+    opacity: 0;
+    left:220px;
+    top: 30px;
+    height:20px;
+
+}
+#Lgit{
+    padding: 0px;
+     transition: 0.5s;
+    letter-spacing: 10px;
+    margin-left: 250px;
+    text-shadow: 5px 5px 4px rgb(61, 10, 109);
+    font-size: 10px;
+    color: #ffff;
+    font-family: 'Rock Salt', cursive;
+    text-decoration: underline solid 1px transparent;
+    width: 200px;
+}
+
+
+#Lgit:hover .imgLink{
+    transition: 0.5s;
+    opacity: 1;
+}
+#Lgit:hover{
+    transition: 0.5s;
+    text-decoration: underline solid 2px #fff;
+}
+#Llinke{
+    letter-spacing: 8px;
+    
+    text-shadow: 5px 5px 4px rgb(61, 10, 109);
+    font-size: 10px;
+    color: #ffff;
+    font-family: 'Rock Salt', cursive;
+    text-decoration: underline solid 0px transparent;
+}
+
+#Llinke:hover .imgLink2{
+opacity: 1;
+transition: 0.5s;
+
+}
+#Llinke:hover{
+    transition: 0.5s;
+    text-decoration: underline solid 2px #fff;
+}
+
+
+.h1-link{
+    
+    position: absolute;
+    right:130px;
+  top: 3050px;
+     padding: 0px;
+    text-shadow: 5px 6px 6px rgb(61, 10, 109);
+    font-size: 50px;
+    color: #ffff;
+    font-family: 'Lobster', cursive;
+    text-decoration: underline 5px Blueviolet;
+    
+}
+
+
+
 
         footer{
             display: flex;
@@ -833,6 +966,9 @@ footer{
         }
         
         
+}
+.espaco{
+    margin-bottom: 260px;
 }
 
 
