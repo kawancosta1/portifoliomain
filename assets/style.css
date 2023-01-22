@@ -10,7 +10,8 @@
 }
 
 :root{
-    
+    --main-color:rgb(138, 43, 226);
+    --violetaMais:rgb(76, 12, 136);
 }
 
 body{
@@ -26,7 +27,7 @@ body{
 
 nav{
     
-   box-shadow: 1px 1px 10px  rgb(138, 43, 226);
+   box-shadow: 1px 1px 10px var(--main-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +104,7 @@ text-shadow: 1px 1px 1px #ffff ;
 
 .p-style{
     font-family: 'Lobster', cursive;
-
+    letter-spacing: 8px;
     font-family: 'Nova Mono', monospace;
     text-shadow: 2px 1px 3px rgb(138, 43, 226);
     font-size: 25px;
@@ -127,9 +128,7 @@ font-size: 35px;
 }
 
 #eu{
-  position: relative;
-  right: 60px;
-  margin-left: 12.5%;
+ 
     border: solid 2px rgb(82, 15, 121);
 height: 430px;
 width: 400px
@@ -148,10 +147,13 @@ p{
    height: auto;
  
 }
-.lista{
-    margin: 0%;
-    padding: 0%;
-    width: 400px;
+.header-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    
 }
 
 /* CARDS PROJETOS */
@@ -170,7 +172,7 @@ p{
 .imgP{
     margin: 0%;
     height: 500px;
-    margin-left: -73%;
+    
    transition: 0.5s;
 margin-top: 70px;
 filter:brightness(0.2) ;
@@ -180,7 +182,7 @@ filter:brightness(0.2) ;
 }
 
 .imgAndroid{
-    margin-left: -325px;
+    
 }
 #imgImc:hover{
     transition: 0.5s;
@@ -210,14 +212,10 @@ filter:brightness(0.2) ;
 
 
 .p-li{
-    margin-bottom: 0px;
-    
-    position: relative;
-    top: 20px;
-    right: -300px;
-    margin: 0px;
+   
+    margin-top: 20%;
     padding: 0%;
-    text-align: center;
+   
     width: 750px;
     color: #fff;
     font-family: monospace;
@@ -225,11 +223,9 @@ filter:brightness(0.2) ;
     font-size: 25px;
 }
 .p-star{
-    margin-bottom: 0px;
+    
     text-shadow: 2px 2px 2px #00aa33;
-    position: relative;
-    top: 20px;
-    right: -300px;
+   
     margin: 0px;
     padding: 0%;
     text-align: center;
@@ -242,9 +238,7 @@ filter:brightness(0.2) ;
 .p-cordel{
     margin-bottom: 0px;
     text-shadow: 3px 3px 2px #2415a3;
-    position: relative;
-    top: 20px;
-    right: -300px;
+   
     margin: 0px;
     padding: 0%;
     text-align: center;
@@ -254,12 +248,18 @@ filter:brightness(0.2) ;
     letter-spacing: 7px;
     font-size: 25px;
 }
+.centralizar{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .p-android{
     margin-bottom: 0px;
     text-shadow: 1px 1px 2px #ecc410;
     position: relative;
     top: 20px;
-    right: -300px;
+    left: 190px;
     margin: 0px;
     padding: 0%;
     text-align: center;
@@ -296,13 +296,14 @@ font-size: 33px;
 }
 /* displayzinho que surge */
 .Naparece{
+    opacity: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.5s;
     transform: translateX(-1000px);
     background-color: rgb(255, 255, 255);
-    width: 100%;
+    width: 40%;
     height: 30px;
     z-index: 1;
     background-image: linear-gradient(to right, black ,rgb(91, 7, 148),rgb(55, 5, 88),rgb(33, 2, 53),black);
@@ -312,8 +313,9 @@ font-size: 33px;
    
 }
 .aparece{
+    opacity: 1;
     background-image: linear-gradient(to right, black ,rgb(91, 7, 148),rgb(55, 5, 88),rgb(33, 2, 53),black);
-    transform: translateX(220px);
+    transform: translateX(500px);
     animation: fade 0.5s ease-out  ;
 }
 .NapareceStar{
@@ -323,17 +325,17 @@ font-size: 33px;
     transition: 0.5s;
     transform: translateX(-1000px);
     background-color: rgb(255, 255, 255);
-    width: 100%;
+    width: 30%;
     height: 30px;
     z-index: 1;
-    background-image: linear-gradient(to right, black ,rgb(91, 7, 148),rgb(55, 5, 88),rgb(33, 2, 53),black);
+    background-image: linear-gradient(to right,#02733E,#035931);
    border-radius: 20px;
    animation: fadeend 0.5s ease-out  ;
    margin-top:-40px ;
 }
 .apareceStar{
     background-image: linear-gradient(to right,#02733E,#035931);
-    transform: translateX(-250px);
+    transform: translateX(60px);
     animation: fade 0.5s ease-out  ;
 }
 .NapareceCordel{
@@ -343,7 +345,7 @@ font-size: 33px;
     transition: 0.5s;
     transform: translateX(-1000px);
     background-color: rgb(255, 255, 255);
-    width: 100%;
+    width: 30%;
     height: 30px;
     z-index: 1;
     background-image: linear-gradient(to right, black ,rgb(91, 7, 148),rgb(55, 5, 88),rgb(33, 2, 53),black);
@@ -353,7 +355,7 @@ font-size: 33px;
 }
 .apareceCordel{
     background-image: linear-gradient(to right,#000000,#140849,#220d81,#17045c);
-    transform: translateX(250px);
+    transform: translateX(650px);
     animation: fade 0.5s ease-out  ;
 }
 .NapareceAndroid{
@@ -363,7 +365,7 @@ font-size: 33px;
     transition: 0.5s;
     transform: translateX(-1000px);
     background-color: rgb(255, 255, 255);
-    width: 100%;
+    width: 30%;
     height: 30px;
     z-index: 1;
    background-color: #000;
@@ -373,7 +375,7 @@ font-size: 33px;
 }
 .apareceAndroid{
    background-color: #000;
-    transform: translateX(350px);
+    transform: translateX(700px);
     animation: fade 0.5s ease-out  ;
 }
 
@@ -443,12 +445,13 @@ font-size: 33px;
 /* footer */
 
 footer{
+  
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100px;
-   
+   background-color: var(--violetaMais);
     margin-top: 70px;
     
   }
@@ -456,9 +459,10 @@ footer{
 .p-foo{
    
     font-size: 20px;
-
-  
+color: #fff;
+  text-shadow: 4px 4px 3px #000;
     letter-spacing: 8px;
    
 
 
+}
