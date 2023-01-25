@@ -15,7 +15,6 @@
 }
 
 body{
-    overflow-x: hidden;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -71,46 +70,26 @@ text-shadow: 1px 1px 1px white;
 text-decoration: underline rgb(138, 43, 226);;
 }
 
-#about{
+#resume{
 text-shadow: 1px 1px 1px #ffff ;
     color: rgb(138, 43, 226);
     text-decoration: underline  rgb(138, 43, 226);
 }
 
-main{
-    margin-top:10vh ;
-    width: 74vw;
-    display: flex;
-    padding-bottom: 10vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 2px 5px 5px var(--violetaMais);
-    
-}
-
-#p-about{
-    padding: 0px;
-    width: 70vw;
-    text-align: justify;
-    font-size: 30px;
-    text-decoration: none;
-    color: #ffff;
-    transition: 0.5s;
-    text-shadow: 2px 2px 2px rgb(138, 43, 226);
-    font-family: monospace;
-}
-
 h1{
-    font-size: 80px;
+    font-size: 100px;
     color: white;
-    text-shadow: 4px 4px 4px rgb(138, 43, 226);
+    text-shadow: 2px 2px 2px rgb(138, 43, 226);
     font-family: 'Lobster', cursive;
 }
 
-
+object{
+    margin: auto;
+    overflow-y: hidden;
+    width: 70vw;
+    height: 210vh;
+    padding: 0px;
+}
 
 
 /* footer */
@@ -124,7 +103,7 @@ footer{
     width: 100vw;
     height: 18vh;
    background-color: var(--violetaMais);
-    margin-top: 10vh;
+    margin-top: 70px;
     
   }
   
