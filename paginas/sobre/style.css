@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nova+Mono&display=swap');
+/*@follow-up  */
+*{
+   
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --main-color:rgb(138, 43, 226);
+    --violetaMais:rgb(76, 12, 136);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+    background-color: rgb(0, 0, 0);
+}
+
+/* PARTE NAVBAR */
+
+nav{
+    
+   box-shadow: 1px 1px 10px var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    height: 80px;
+    width: 100%;
+   
+}
+ul{
+    list-style-type: none;
+}
+/* Fonte e cor */
+nav{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+    color:rgb(255, 255, 255) ;
+    background-color: rgba(0, 0, 0, 0.151);
+    
+}
+
+nav > ul{
+    position: relative;
+   
+    padding: 60px;
+   
+}
+.link-nav{
+    text-decoration: none;
+    color: #ffff;
+    transition: 0.5s;
+    text-shadow: 2px 2px 2px rgb(138, 43, 226);
+}
+
+.link-nav:hover{
+transition: 0.5s;
+color: rgb(138, 43, 226);
+text-shadow: 1px 1px 1px white;
+text-decoration: underline rgb(138, 43, 226);;
+}
+
+#home{
+text-shadow: 1px 1px 1px #ffff ;
+    color: rgb(138, 43, 226);
+    text-decoration: underline  rgb(138, 43, 226);
+}
+
+
+/* footer */
+
+footer{
+    position: relative;
+    top:10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 18vh;
+   background-color: var(--violetaMais);
+    margin-top: 70px;
+    
+  }
+  
+.p-foo{
+   
+    font-size: 20px;
+color: #fff;
+  text-shadow: 4px 4px 3px #000;
+    letter-spacing: 8px;
+   
+
+
+}
