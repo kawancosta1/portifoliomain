@@ -1,6 +1,7 @@
-//new date()
-function criaHoraDosSegundos(segundos){
-    const data = new Date(segundos * 1000)
+//new date() 
+//zerar o timer e passar pra segundos, pois o date recebe em milésimo de segundos
+function criaHoraDosSegundos(segundosFunction){
+    const data = new Date(segundosFunction * 1000)
     return data.toLocaleTimeString('pt-BR', {
         hour12: false,
         //utc serve para zerar os 00:00:00
@@ -17,10 +18,11 @@ let segundos = 0;
 
 let timer;
 function iniciaRelogio(){
+    //vai somar ++ no segundos e passar os segundos pra função sem tempo predefinidpo
      timer = setInterval(function(){
-    segundos++;
-    relogio.innerHTML = criaHoraDosSegundos(segundos)
-    })
+        segundos++;
+        relogio.innerHTML = criaHoraDosSegundos(segundos)
+     })
 }
 
 try{
@@ -32,7 +34,7 @@ try{
             //antes de iniciar devemos tirar todas as classes de cores
             relogio.classList.remove('pausado','zerar1');
             segundos = 0;
-            relogio;innerHTML = '00:00:00'
+            relogio.innerHTML = '00:00:00'
             iniciaRelogio();
         }else if(el.classList.contains('pausar')){
             //antes de iniciar devemos tirar todas as classes de cores e pausar o timer com o clearinterval
