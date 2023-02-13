@@ -50,4 +50,13 @@ function retirarAndroid(){
     imagem4.classList.toggle('apareceAndroid')
 }
 
+function passarAgency(){
+    let imagem4 = document.querySelector('.NapareceAgency')
+    imagem4.classList.toggle('apareceAgency')
+}
+function retirarAgency(){
+    let imagem4 = document.querySelector('.NapareceAgency')
+    imagem4.classList.toggle('apareceAgency')
+}
+
 //Nav
