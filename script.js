@@ -1,4 +1,4 @@
-
+alert('infelizmente o github pages não está rodando o js, que com ele meu portifólio tem algumas animações')
 
 
 // imc
